@@ -1,1 +1,1 @@
-# WeddingDay
+# Wedding
