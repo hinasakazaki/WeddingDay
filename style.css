@@ -1,12 +1,12 @@
 body {
-	font-family: 'Carrois Gothic SC', sans-serif;
-	margin: 0;
+	font-family: 'Vollkorn', serif;
 	height: 100%; 
-	font-size:18;
+	font-size:14;
 	text-align:center;
 	display:inline-block;
 	color:#75828C;
 	background-color: #FFEAE5;
+	margin: 0;
 }
 
 #colors {
@@ -23,7 +23,7 @@ body {
 }
 
 #header {
-	font-size:20;
+	font-size:14;
 	font-family: 'Carrois Gothic SC', serif;
 	position: fixed;
 	width:100%;
@@ -33,7 +33,7 @@ body {
 #menu { 
 	background-color: #E1ADB4;
 	color:#898F82;
-	padding: 30px;
+	padding: 25px;
 }
 
 .menu-item {
@@ -58,11 +58,18 @@ body {
 	padding-bottom:40px;
 	margin-top:60px;
 	margin-bottom:60px;
-
+	
 	font-family: 'Oleo Script', serif;
 	font-size:72;
 	background-color:white;
 	width:100%
+}
+
+#paragraphs {
+	padding-left:60px;
+	padding-right:60px;
+	
+	text-align:left;
 }
 
 #story {
@@ -73,6 +80,7 @@ body {
 	margin-bottom:30px;
 	padding-top:60px;
 	padding-bottom:60px;
+
 }
 
 #rsvp {
@@ -105,13 +113,15 @@ img {
 }
 
 #title {
+	font-weight:bold;
+	font-family: 'Carrois Gothic SC', sans-serif;
 	font-size:30px;
 	margin:20px;
 }
 
 .link {
 	display:inline-block;
-	color: #f57a7a;
+	color: #F4C0AF;
 	transition: 0.2s;
 	-moz-transition: 0.2s;
 	-webkit-transition: 0.2s;
@@ -121,13 +131,41 @@ img {
 	color:inherit;
 }
 .link:hover{
-	color: #fac461;
+	color: #FEFAD1;
+}
+
+
+.button {
+	font-family: 'Carrois Gothic SC', sans-serif;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	margin-top:5;
+    position:relative;
+    vertical-align: center;
+    text-align: center;
+    background-color: #898F82;
+    font-size:16;
+	color:white;
+	width:170px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:25px;
+}
+
+.button a {
+    text-decoration: none;
+    color:white;
+}
+
+.button a:hover {
+    color: #FEFAD1;
 }
 
 #footer {
+	font-family: 'Carrois Gothic SC', sans-serif;
 	text-align:center;
 	padding-top:10;
     padding-bottom:10;
-   	padding-left:50;
    	bottom:0;
 }
