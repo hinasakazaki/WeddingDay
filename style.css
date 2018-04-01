@@ -1,0 +1,133 @@
+body {
+	font-family: 'Carrois Gothic SC', sans-serif;
+	margin: 0;
+	height: 100%; 
+	font-size:18;
+	text-align:center;
+	display:inline-block;
+	color:#75828C;
+	background-color: #FFEAE5;
+}
+
+#colors {
+	background-color: #F4C0AF;
+	/*pale chestnut*/
+	background-color: #FFEAE5; 
+	/*misty rose*/
+	color: #FEFAD1;
+	/*lemon chiffon*/
+	color: #898F82;
+	/*mummy's tomb*/
+	color: #75828C;
+	/*slate gray*/
+}
+
+#header {
+	font-size:20;
+	font-family: 'Carrois Gothic SC', serif;
+	position: fixed;
+	width:100%;
+	text-align:center;
+}
+
+#menu { 
+	background-color: #E1ADB4;
+	color:#898F82;
+	padding: 30px;
+}
+
+.menu-item {
+	display:inline-block;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.menu-item:hover {
+	color:#FEFAD1;
+}
+
+.menu-item a {
+	text-decoration: none;
+	color:inherit;
+}
+
+#home {
+	padding-top:70px;
+	padding-bottom:40px;
+	margin-top:60px;
+	margin-bottom:60px;
+
+	font-family: 'Oleo Script', serif;
+	font-size:72;
+	background-color:white;
+	width:100%
+}
+
+#story {
+	background-color:white;
+	width:100%;
+	
+	margin-top:30px;
+	margin-bottom:30px;
+	padding-top:60px;
+	padding-bottom:60px;
+}
+
+#rsvp {
+	background-color:white;
+	width:100%;
+	
+	margin-top:30px;
+	margin-bottom:30px;
+	
+	padding-top:60px;
+	padding-bottom:60px;
+}
+
+#registry {
+	background-color:white;
+	width:100%;
+	
+	margin-top:30px;
+	margin-bottom:30px;
+	
+	
+	padding-top:60px;
+	padding-bottom:60px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+#title {
+	font-size:30px;
+	margin:20px;
+}
+
+.link {
+	display:inline-block;
+	color: #f57a7a;
+	transition: 0.2s;
+	-moz-transition: 0.2s;
+	-webkit-transition: 0.2s;
+}
+.link a {
+	text-decoration: none;
+	color:inherit;
+}
+.link:hover{
+	color: #fac461;
+}
+
+#footer {
+	text-align:center;
+	padding-top:10;
+    padding-bottom:10;
+   	padding-left:50;
+   	bottom:0;
+}
