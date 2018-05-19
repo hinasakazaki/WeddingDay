@@ -1,7 +1,7 @@
 body {
 	font-family: 'Nunito', sans-serif;
 	height: 100%; 
-	font-size:14;
+	font-size:16px;
 	text-align:center;
 	display:inline-block;
 	color:#75828C;
@@ -23,7 +23,7 @@ body {
 }
 
 #header {
-	font-size:14;
+	font-size:16px;
 	font-family: 'Carrois Gothic SC', serif;
 	position: fixed;
 	width:100%;
@@ -72,6 +72,11 @@ body {
 	text-align:left;
 }
 
+#paragraphs-wrap {
+	padding-left:60px;
+	padding-right:60px;
+}
+
 #story {
 	background-color:white;
 	width:100%;
@@ -94,13 +99,11 @@ body {
 	padding-bottom:60px;
 }
 
+
 #registry {
+	float:left;
 	background-color:white;
 	width:100%;
-	
-	margin-top:30px;
-	margin-bottom:30px;
-	
 	
 	padding-top:60px;
 	padding-bottom:60px;
@@ -115,8 +118,13 @@ img {
 #title {
 	font-weight:bold;
 	font-family: 'Carrois Gothic SC', sans-serif;
-	font-size:30px;
+	font-size:40px;
 	margin:20px;
+}
+
+#logo {
+	margin:20px;
+	display:inline-block;
 }
 
 .link {
@@ -165,7 +173,7 @@ img {
 #footer {
 	font-family: 'Carrois Gothic SC', sans-serif;
 	text-align:center;
-	padding-top:10;
-    padding-bottom:10;
-   	bottom:0;
+	padding-top:20px;
+	margin-top:20px;
+    padding-bottom:10px;
 }
