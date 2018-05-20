@@ -1,136 +1,28 @@
-<html>
-  <head>
-    <title>Hina and Chris</title>
+---
+layout: default
+---
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <!-- google fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Oleo Script'rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Carrois Gothic SC' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
-	
-    <!-- js -->
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="js/wedding.js"></script>
-  </head>
-
-  <div id = "header">
-   <!-- TODO maybe include rsvp button here -->
-   
-	<div id="menu">
-	  <div class="menu-item"> <a href = "#home"> Home </a> </div>
-	  <div class="menu-item"> <a href = "#story"> Our Story </a> </div>
-	  <div class="menu-item"> <a href = "#rsvp"> RSVP </a> </div>
-	  <div class="menu-item"> <a href = "#registry"> Registry </a> </div>
-	</div>
-  </div>
-  
-  <div id = "home">
-	Hina &amp; Chris
-	<br>
-	July 6th, 2019
-  
-  </div>
-  
-  
-  <div id = "story">
-	<div id = "title">
-	❤
-	<br>
-	<br>
-	Our Story
-	</div>
-	
-		<div id = "paragraphs">
-    
-    <div id="paragraphs">
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non eros nulla. Fusce ullamcorper imperdiet lectus, nec sodales quam volutpat ut. Vivamus nec malesuada velit. Pellentesque in diam ante. Vestibulum luctus sollicitudin aliquam. Nullam molestie vehicula dolor, et lacinia ipsum euismod in. Aliquam suscipit neque quis ultrices consectetur. Quisque facilisis nec erat tempor feugiat.
-
-	<br> <br>
-	
-Etiam facilisis fringilla augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi tempus augue nec libero dictum, id sagittis lectus bibendum. Cras eget malesuada enim, id vestibulum sem. Praesent finibus sed massa eget commodo. Donec posuere pellentesque quam non sodales. Cras nec nibh nec urna pellentesque dapibus.
-
-<br> <br>
-
-Morbi sollicitudin orci nec dui consectetur, eu interdum neque pretium. Nunc nisi leo, interdum nec elit et, vestibulum tempor mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas in finibus ante. Sed sed auctor mauris, eget luctus ante. Suspendisse quis finibus nulla. Nam et auctor justo.
-
-<br> <br>
-
-In ornare massa id felis euismod, nec semper tellus porttitor. Donec nec risus ipsum. Nunc sem neque, malesuada ac magna vitae, egestas convallis purus. Ut posuere posuere massa, sed accumsan mauris imperdiet vel. Etiam bibendum dictum auctor. Suspendisse ut ligula erat. Sed dictum auctor turpis, sit amet ullamcorper augue semper non. Integer sit amet ipsum eget diam maximus interdum. Morbi imperdiet nisi a nulla sollicitudin, vitae lacinia justo faucibus. Donec ac est vel tortor laoreet maximus. Donec finibus sit amet tellus vitae aliquam. Suspendisse luctus dui eu est fermentum, vitae congue metus pellentesque. Suspendisse maximus leo sit amet quam feugiat, ac condimentum sapien pharetra. Praesent accumsan turpis non massa consectetur, id viverra magna mattis.
-
-<br> <br>
-
-Quisque maximus est in risus consequat interdum. Maecenas turpis tellus, molestie non imperdiet quis, ultrices in turpis. Phasellus urna felis, pharetra et pretium et, consectetur vel enim. Donec vitae euismod felis, a ornare lectus. Mauris vitae ex non dui tempus pellentesque a vitae ex. Curabitur in pretium est. Integer neque purus, congue eget hendrerit congue, blandit tincidunt ligula. Mauris eu est et nisl semper dignissim non at nisl. In volutpat, nulla at fermentum eleifend, lorem elit lacinia lectus, vel cursus ligula arcu in ligula.
-
-  </div>
-    
+    <section id="home" class="first-section">
+        <div class="title">Hina &amp; Chris</div>
+        <div class="when-and-where"><time datetime="2019-07-06">July 6th, 2019</time><br>
+        San Francisco, CA</div>
+    </section>
+    {% for s in site.data.content %}
+    <scroll-page id="{{ s.id }}">
+    <hr>
+    <section>
+        <div class="container">
+        <h2>❤<br><br>{{ s.section }}</h2>
+        {% if s.right_image %}
+        <div class="sidebar-right"><img src="{{ s.right_image }}" alt="{{ s.alt }}"></div>
+        {% endif %}
+        {{ s.text | markdownify }}
+        </div>
+    </section>
+    {% if s.full_image %}
+    <hr>
+    <img class="full-img" src="{{ s.full_image }}" alt="{{ s.alt }}">
+    {% endif %}
+    {% endfor %}
+    </scroll-page>
     </div>
-	
-  </div>
-  
-  <div id = "img">
-	 <img src="img/2013.jpg" alt="@back in 2013">
-  </div>
-  
-  <div id = "rsvp">
-	<div id = "title">
-	❤
-	<br>
-	<br>
-	RSVP
-	</div>
-	
-	<div id = "paragraphs-wrap">
-	In your paper invitation, you will find details for the event and RSVPing.
-	<br>
-	<br>
-	Note that your save the date cards will <b>not</b> contain the information. The paper invites will be mailed in January of 2019.
-	<br>
-	<br>
-	<div class = "button">
-	<a href="https://hinachris2019.app.rsvpify.com/" target="_blank">
-	RSVP HERE
-	</a>
-	</div>
-	</div>
-	
-  </div>
-  
-  <div id = "img">
-	 <img src="img/twirl.jpg" alt="@twirling in tennessee">
-  </div>
-  
-  <div id = "registry">
-	<div id = "title">
-	❤
-	<br>
-	<br>
-	Registry
-	</div>
-	
-		<div id = "paragraphs-wrap">
-		We have registries at the following places:
-
-		<br>
-		<a href="https://www.amazon.com/wedding/hina-sakazaki-chris-thompson-san-francisco-july-2019/registry/7W0E1HI4LT" target="_blank"><div id= "logo"><img src="img/icons/amazon.png" alt="@Amazon logo"></div></a>
-		<a href="https://www.crateandbarrel.com/gift-registry/registrant-list/5849481" target="_blank"><div id= "logo"><img src="img/icons/crate-n-barrel.png" alt="@Crate and Barrel logo"></div></a>
-		<a href="https://www.potterybarn.com/registry/dr82np6gg7/registry-list.html" target="_blank"><div id= "logo"><img src="img/icons/pottery-barn.png" alt="@Pottery Barn logo"></div></a>
-		<br>
-		
-		We don't have that much stuff on our registry, so if you'd like to make a gift to us, please consider donating to the organizations below:
-		<br>
-		<a href="https://my.care.org/site/Donation2?df_id=15600&15600.donation=form1&mfc_pref=T" target="_blank"><div id= "logo"><img src="img/icons/care.png" alt="@CARE logo"></div></a>
-		<a href="https://donate.doctorswithoutborders.org/onetime.cfm" target="_blank"><div id= "logo"><img src="img/icons/msf.png" alt="@MSF logo"></div></a>
-		<a href="https://www.nilc.org/get-involved/donate/" target="_blank"><div id= "logo"><img src="img/icons/nilc.png" alt="@NILC logo"></div></a>
-		 
-
-		</div>
-
-	
-  </div>
-  
-  <div id = "footer">
-   Made with ❤ by Hina Sakazaki &amp; Chris Thompson, 2018
-  </div>
-  
-</html>

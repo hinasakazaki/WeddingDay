@@ -1,0 +1,170 @@
+html {
+    font: 20px/1.5 $main-font, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: $slate-gray;
+    background-color: $misty-rose;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font, sans-serif;
+    line-height: 1;
+    color: $slate-gray;
+    text-align: center;
+}
+
+hr {
+    border: none;
+    margin: 1.5rem 0;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    top: -1px;
+}
+
+// New
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 900;
+    text-align: center;
+    background-color: $menu-bg;
+    color: $menu-color;
+    font-size:16px;
+    font-family: $heading-font, serif;
+    box-shadow: 0 0 30px $shadow-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 30rem) {
+nav {
+    position: static;
+}
+}
+
+nav a {
+    display: inline-block;
+    transition: 0.5s;
+    padding: 25px 50px;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav a:hover {
+    color: $lemon-chiffon;
+    text-decoration: none;
+}
+
+#wrapper {
+    max-width: 40rem;
+    margin: 60px auto 0 auto;
+    padding: 0 3rem;
+    background-color: white;
+}
+
+@media (max-width: 30rem) {
+#wrapper {
+    margin: 0 auto;
+}
+}
+
+.first-section {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.title {
+    font: 72px/1.5 $title-font, serif;
+}
+.when-and-where {
+    font: 26px/1.5 $title-font, serif;
+}
+
+section {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.container img, .container iframe {
+    max-width: 100%;
+}
+
+.container img {
+    margin: 0 auto;
+    display: block;
+}
+
+.sidebar-right {
+    float: right;
+    width: 35%;
+    margin: 10px 0 10px 25px;
+    box-shadow: 5px 5px 15px $shadow-color;
+}
+
+.full-img {
+    width: 100%;
+    box-shadow: 0 0 10px #888;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logos img {
+    padding:20px;
+}
+
+.link {
+	display:inline-block;
+	color: #F4C0AF;
+	transition: 0.2s;
+}
+.link a {
+	text-decoration: none;
+	color:inherit;
+}
+.link:hover{
+	color: #FEFAD1;
+}
+
+.button {
+	font-family: $heading-font, sans-serif;
+	transition: 0.5s;
+	margin-top:5;
+    position:relative;
+    vertical-align: center;
+    text-align: center;
+    background-color: $mummys-tomb;
+    font-size:16;
+	color:white;
+	width:150px;
+	margin-left:auto;
+	margin-right:auto;
+    border-radius:10px;
+    padding: 5px;
+}
+
+.button a {
+    text-decoration: none;
+    color:white;
+}
+
+.button a:hover {
+    color: #FEFAD1;
+}
+
+#footer {
+	font-family: $heading-font, sans-serif;
+	text-align:center;
+	padding-top:20px;
+    padding-bottom:10px;
+}
