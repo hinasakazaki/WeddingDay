@@ -1,1 +1,3 @@
 # Wedding
+
+Our wedding website.
