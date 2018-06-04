@@ -123,16 +123,15 @@ section {
     padding:20px;
 }
 
-.link {
+#content a {
 	display:inline-block;
 	color: #F4C0AF;
 	transition: 0.2s;
-}
-.link a {
 	text-decoration: none;
 	color:inherit;
 }
-.link:hover{
+
+#content a:hover{
 	color: #FEFAD1;
 }
 
