@@ -124,13 +124,15 @@ section {
 }
 
 #wrapper a {
-	display:inline-block;
-	color: $pale-chestnut;
-	transition: 0.2s;
+    display: inline-block;
+    color: $pale-chestnut;
+	text-decoration: none;
+	border-bottom: 1px dashed $pale-chestnut;
+	line-height: .85;
 }
 
 #wrapper a:hover{
-	color: $misty-rose;
+	color: $mummys-tomb;
 }
 
 .button {
