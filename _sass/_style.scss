@@ -123,16 +123,16 @@ section {
     padding:20px;
 }
 
-#content a {
+#wrapper a {
 	display:inline-block;
-	color: #F4C0AF;
+	color: $pale-chestnut;
 	transition: 0.2s;
 	text-decoration: none;
 	color:inherit;
 }
 
-#content a:hover{
-	color: #FEFAD1;
+#wrapper a:hover{
+	color: $mummys-tomb;
 }
 
 .button {
