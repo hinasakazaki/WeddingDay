@@ -3,9 +3,6 @@
   right_image: img/2013.jpg
   alt: back in 2013
   text: |
-    **Lorem Ipsum** is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 
 - section: RSVP
   id: rsvp
@@ -29,9 +26,12 @@
     We have registries at the following places:
 
     <div class="logos">
+<<<<<<< HEAD
     <a href="https://www.amazon.com/wedding/hina-sakazaki-chris-thompson-san-francisco-july-2019/registry/7W0E1HI4LT" target="_blank" rel="noopener"><img src="img/icons/amazon.png" alt="@Amazon logo"></a>
     <a href="https://www.crateandbarrel.com/gift-registry/registrant-list/5849481" target="_blank" rel="noopener"><img src="img/icons/crate-n-barrel.png" alt="@Crate and Barrel logo"></a>
     <a href="https://www.potterybarn.com/registry/dr82np6gg7/registry-list.html" target="_blank" rel="noopener"><img src="img/icons/pottery-barn.png" alt="@Pottery Barn logo"></a>
+=======
+>>>>>>> master
     </div>
 
     We don't have that much stuff on our registry, so if you'd like to make a gift to us, please consider donating to the organizations below:

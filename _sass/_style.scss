@@ -123,17 +123,16 @@ section {
     padding:20px;
 }
 
-.link {
-	display:inline-block;
-	color: #F4C0AF;
-	transition: 0.2s;
-}
-.link a {
+#wrapper a {
+    display: inline-block;
+    color: $pale-chestnut;
 	text-decoration: none;
-	color:inherit;
+	border-bottom: 1px dashed $pale-chestnut;
+	line-height: .85;
 }
-.link:hover{
-	color: #FEFAD1;
+
+#wrapper a:hover{
+	color: $mummys-tomb;
 }
 
 .button {
@@ -154,12 +153,13 @@ section {
 }
 
 .button a {
-    text-decoration: none;
-    color:white;
+    text-decoration: none !important;
+    color:white !important;
+	border-bottom: none !important;
 }
 
 .button a:hover {
-    color: #FEFAD1;
+    color: #FEFAD1 !important;
 }
 
 #footer {
