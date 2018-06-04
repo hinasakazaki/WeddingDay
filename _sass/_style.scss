@@ -153,12 +153,12 @@ section {
 }
 
 .button a {
-    text-decoration: none;
-    color:white;
+    text-decoration: none !important;
+    color:white !important;
 }
 
 .button a:hover {
-    color: #FEFAD1;
+    color: #FEFAD1 !important;
 }
 
 #footer {
