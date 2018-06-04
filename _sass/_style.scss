@@ -119,8 +119,13 @@ section {
     align-items: center;
     flex-wrap: wrap;
 }
+
 .logos img {
     padding:20px;
+}
+
+.logos a {
+    border-bottom: none !important;
 }
 
 #wrapper a {
