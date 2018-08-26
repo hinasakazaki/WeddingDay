@@ -108,6 +108,10 @@ section {
     box-shadow: 5px 5px 15px $shadow-color;
 }
 
+.img-no-shadow {
+	width: 100%;
+}
+
 .full-img {
     width: 100%;
     box-shadow: 0 0 10px #888;
@@ -123,7 +127,7 @@ section {
     padding:20px;
 }
 
-#wrapper a {
+#wrapper a, #footer a {
     display: inline-block;
     color: $pale-chestnut;
 	text-decoration: none;
@@ -131,9 +135,14 @@ section {
 	line-height: .85;
 }
 
-#wrapper a:hover{
+#wrapper a:hover, #footer a:hover{
 	color: $mummys-tomb;
 }
+
+#footer a {
+	color: $slate-gray
+}
+
 
 .button {
 	font-family: $heading-font, sans-serif;
