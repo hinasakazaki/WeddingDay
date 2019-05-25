@@ -18,16 +18,7 @@
   full_image: img/twirl.jpg
   alt: twirling in tennessee
   text: |
-    In your paper invitation, you will find details for the event and RSVPing.
-
-    Note that your save the date cards will **not** contain the information.
-    The paper invites will be mailed in February of 2019.
-
-    <div class="button">
-    <a href="https://hinachris2019.app.rsvpify.com/" target="_blank" rel="noopener">
-    RSVP HERE
-    </a>
-    </div>
+    The RSVP for this event is now closed.
 
 - section: Registry
   id: registry
